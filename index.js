@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 //                                    for single element
 // const heading = React.createElement(
 //   "h1",
@@ -20,7 +23,11 @@
 //                                    for nested elements
 const Parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "children" }, [
-    React.createElement("h1", { className: "headings" }, "first element"),
+    React.createElement(
+      "h1",
+      { className: "headings" },
+      "this is namaste react"
+    ),
     React.createElement("h1", { className: "headings" }, "second element"),
     React.createElement("h1", { className: "headings" }, "third element"),
   ]),

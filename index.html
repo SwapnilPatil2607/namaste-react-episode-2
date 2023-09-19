@@ -29,17 +29,20 @@
 
     <!-- now we have super powers of react because of 2 links below -->
     <!-- react code wont be read by browser without this CDN links since it does not understand reactjs -->
-    <script
+
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
+    removing CDN links since importing react and react-dom from nodeModules
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
+    ></script> -->
 
     <!-- our index file needs to be here after (CDN) Content delivery network links -->
-    <script src="./index.js">
+    <!-- type module in script tag is necessary now since we are using import -->
+    <script type="module" src="./index.js">
       // const heading = React.createElement("h1", {}, "Hello world from react!");
       // const root = ReactDOM.createRoot(document.getElementById("root"));
       // root.render(heading);
